@@ -1,0 +1,12 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    uses: got-feedback/.github/.github/workflows/reusable-ci.yml@main
+  validate:
+    uses: got-feedback/feedBack-plugin-spec/.github/workflows/plugin-validate.yml@main

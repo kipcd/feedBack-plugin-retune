@@ -1,0 +1,26 @@
+{
+  "id": "retune",
+  "name": "Retune",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Convert a feedpak to another tuning — pitch-shifts the audio and re-frets the charts.",
+  "category": "tools",
+  "icon": "assets/thumb.svg",
+  "standards": ["capability-pipelines.v1"],
+  "minHost": "0.3.0-alpha.1",
+  "script": "screen.js",
+  "styles": "assets/plugin.css",
+  "routes": "routes.py",
+  "capabilities": {
+    "ui.library-card-injection": {
+      "roles": ["provider"],
+      "operations": ["action.run"],
+      "events": ["action-registered", "action-result"],
+      "description": "Adds a \"Retune…\" action to feedpak song cards.",
+      "mode": "active",
+      "compatibility": "none",
+      "safety": "safe",
+      "version": 1
+    }
+  }
+}
