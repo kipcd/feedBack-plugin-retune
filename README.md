@@ -7,6 +7,22 @@ C Standard → Drop C, and so on.
 The original song is never modified. The converted copy is written next to it as
 `<name>_<Tuning>.feedpak` and shows up in the library straight away.
 
+## How it works
+
+1. Open the **⋮** menu on a feedpak song card in the Song Library and choose **Retune…**.
+
+   <img src="docs/screenshots/menu.png" alt="Song card menu with the Retune… entry highlighted" width="206">
+
+2. Pick the target tuning. The dialog says how the audio will be shifted and what happens to the
+   chart, then **Convert** builds the new pack.
+
+   <img src="docs/screenshots/picker.png" alt="Retune dialog converting Eb Standard to E Standard" width="560">
+
+3. The converted song joins the original as another chart of the same song, so you can pick either
+   version from the song's chart list.
+
+   <img src="docs/screenshots/versions.png" alt="Song with two charts: the E Standard conversion and the Eb Standard original" width="560">
+
 ## What it can convert
 
 Pick a target from the **Retune…** entry in a feedpak song card's menu. The plugin offers:
